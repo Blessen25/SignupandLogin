@@ -24,8 +24,8 @@ def signup(request):
             if User.objects.filter(username=username).exists():
                 return JsonResponse({"error":"Username already taken"}, status = 400 )
             
-            user = User.objects.create_user(username= username, email=email, password=password, confirm_password=confirm_password)
-            return JsonResponse({'message':'User Created Successfully',"user_id":user.id}),
+            user = User.objects.create_user(username= username, email=email, password=password)
+            return JsonResponse({'message':'User Created Successfully',"user_id":user.id})
     
 
         except Exception as e:
