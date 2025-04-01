@@ -10,7 +10,7 @@ const Signuppage = () => {
                 <>
                     <div className="signupdiv">
                         <h1>SIGNUP</h1>
-                            <form action={'#'} className='formdiv_cstm'> 
+                            <form action={'/login'} className='formdiv_cstm'> 
                                 <p>Username</p>
                                 <input type="text" placeholder="Username" />
                                 <p>Email Id</p>
@@ -20,7 +20,6 @@ const Signuppage = () => {
                                 <p>Confirm Password</p>
                                 <input type="password" placeholder="Confirm Password" />
                                 <button type="submit">Signup</button>
-
                             </form>
                     </div>
                 </>    
